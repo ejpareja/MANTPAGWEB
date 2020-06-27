@@ -9,7 +9,6 @@ body{
 }
 
 .iframe1{
-    align-content: pos;
     width: 100%;
     height: auto;
     background-color: transparent;
@@ -32,6 +31,7 @@ body{
       overflow: auto;
 }
 
+
 .c1 .p1{
     text-align: justify, center;
     font-size: 17px;
@@ -44,6 +44,22 @@ body{
     color: black;
     font-size: 23px;
 }
+
+.c1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+.c1 img:hover{
+    padding: 100px 100px;
+
+    background-image: url("https://fuxion.net/blogX/wp-content/uploads/2015/11/gym-810x540.jpg");
+    
+}
+
 .mapa{
     width: 100%;
     height: auto;
@@ -87,4 +103,69 @@ li a{
 
 li a:hover{
     background-color: #D6EAF8 ;
+}
+
+.c2{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.c2 .c2_1{
+      background-color: #FDFEFE ;
+      width: 100%;
+      margin: 10px;
+      overflow: auto;
+}
+
+.c2 .p2{
+    text-align: justify, center;
+    font-size: 17px;
+    color: black;
+    
+}
+
+.c2 .h11{
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.submenu{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    z-index: 2000;
+}
+
+.submenu ul {
+    list-style: none;
+}
+
+.submenu ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.submenu .ref1 { background-color: #bbf0f0;}
+.submenu .ref2 { background-color: #bbf0f0;}
+.submenu .ref3 { background-color: #bbf0f0;}
+.submenu .ref4 { background-color: #bbf0f0;}
+.submenu .ref5 { background-color: #bbf0f0;}
+
+.submenu ul li a:hover{
+    padding: 10px 40px;
+    
+}
+
+.menu { padding:12.5px 25px 12.5px 25px; }
+
+.wrapper {
+    margin:0 auto;
+    padding-bottom:25px;
+    background:#EBF4FB;
+    width:504px;
+    border:1px solid #ACD8F0; 
 }
