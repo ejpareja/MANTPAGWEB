@@ -1,5 +1,6 @@
 myStorage = window.localStorage;
 const invitado = "INVITADO";
+const usuarioN = "USUARIO"
 
 function validation(){
 
@@ -10,11 +11,11 @@ var password = document.getElementById('pass').value;
         if(password != null && password === "1234"){
             if(localStorage != null){
                 localStorage.clear();
-                myStorage.setItem('usuario', userV);
+                myStorage.setItem('usuario', usuarioN);
+                location.href='../index.html';
             } else {
-                myStorage.setItem('usuario', userV);
-                location.href="../index.html";
-
+                myStorage.setItem('usuario', usuarioN);
+                location.href='../index.html';
             }
         } else {
             alert("La contraseña es incorrecta vuelva a intentar")
@@ -43,12 +44,6 @@ function sendMsg () {
     
 }
 
-let Mipersona = {
-    Nombre : "",
-    Apellido : "Pareja",
-    Cargo : "Estudiante"
-
-}
 
 function contactanos(){
     const genero = document.querySelectorAll('input[name="choice"]');
@@ -59,7 +54,6 @@ function contactanos(){
             break
         }
     }
-
 
     let myData = {
         Nombres : document.getElementById("pnombre").value + " " + document.getElementById("snombre").value ,
@@ -76,4 +70,14 @@ function contactanos(){
     
 }
 
+
+function salir() {
+    localStorage.clear();
+    location.href='./html/login.html'; 
+}
+
+function salirOne() {
+    localStorage.clear();
+    location.href='./login.html'; 
+}
 

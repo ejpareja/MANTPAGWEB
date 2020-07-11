@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
     <title>GYM-PROYECT</title>
 </head>
 <body>
+        <ul class="ul_1">
+            <li><img src="img/login (1).png" alt=""></li>
+            <li><a id="user"></a></li>
+            <li> <button type="submit" onclick="salir()"><img src="img/login.png"></button></li>
+        </ul>    
+        <br>
         <ul>
             <li><a href="#">INICIO</a></li>
             <li><a href="./html/planes.html">PLANES</a></li>
@@ -17,17 +22,17 @@
             <li><a href="./html/catalogo.html">CATALOGO</a></li>
             <li><a href="./html/factura.html">FACTURA</a></li>
             <li><a href="./html/chat.html">CHAT VIRTUAL</a></li>
-            <li><a id="user"></a></li>
         </ul>
 
-        <script>
-            var element = document.getElementById("user");
-            element.innerHTML = localStorage.getItem('usuario');
-        </script>
-
-    div class="encabezado">
+    <div class="encabezado">
         <img  src="img/img1.jpg" alt="IMAGEN"> 
-    </div><
+    </div>
+
+    <script>
+        var element = document.getElementById("user");
+        element.innerHTML = localStorage.getItem('usuario');
+
+    </script>
       
         
 
@@ -89,6 +94,6 @@
 
     </div>
 
-    
+<script src="./js/script.js"></script> 
 </body>
 </html>

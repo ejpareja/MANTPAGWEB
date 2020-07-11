@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style_login.css">
     <title>Login</title>
 </head>
 <body>
     <div style="background-color: beige; align-content: center; width: 50%; height: auto;">
-        <form>
-            <label>Usuario: </label> <br>
-            <input type="text" size="60" id="user"> <br>
-            <label >Contraseña: </label><br>
-            <input type="password" size="60" id="pass"><br>
+        <form class="form">
+            <h1>INICIAR SESION</h1>
+            <input type="text" class="form-contol" id="user" placeholder="Ingrese usuario"> 
+            <input type="password"  class="form-contol" id="pass" placeholder="Ingrese contraseña">
             <input type="submit" onclick="validation()">
             <button type="submit" onclick="validationInvitado()"><a href="../index.html">INVITADO</a></button>
         </form>

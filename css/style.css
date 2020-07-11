@@ -169,3 +169,12 @@ li a:hover{
     width:504px;
     border:1px solid #ACD8F0; 
 }
+
+.ul_1{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1160px;
+    overflow: hidden;
+    background-color: #FDFEFE ;
+}

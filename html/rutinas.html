@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 
     <title>Rutinas</title>
 </head>
 <body>
+    <ul class="ul_1">
+        <li><img src="../img/login (1).png" alt=""></li>
+        <li><a id="user"></a></li>
+        <li> <button type="submit" onclick="salirOne()"><img src="../img/login.png"></button></li>
+    </ul>
+    <br>
 
     <ul>
         <li><a href="../index.html">INICIO</a></li>
@@ -21,6 +28,12 @@
 
 
     </ul>
+
+    <script>
+        var element = document.getElementById("user");
+        element.innerHTML = localStorage.getItem('usuario');
+
+    </script>
 
     <h1 align = "left">
         GYM PROYECT

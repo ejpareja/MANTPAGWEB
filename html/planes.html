@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
+    <ul class="ul_1">
+        <li><img src="../img/login (1).png" alt=""></li>
+        <li><a id="user"></a></li>
+        <li> <button type="submit" onclick="salirOne()"><img src="../img/login.png"></button></li>
+    </ul>
+    <br>
+    <script>
+        var element = document.getElementById("user");
+        element.innerHTML = localStorage.getItem('usuario');
+
+    </script>
     <ul>
         <li><a href="../index.html">INICIO</a></li>
         <li><a href="#">PLANES</a></li>
