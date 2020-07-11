@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
     <title>Contactanos</title>
 </head>
 <body>
@@ -36,61 +37,61 @@
                         Primer Nombre
                     </label>
                     <br>
-                    <input type="text" placeholder="Digite" size="30" > <br>
+                    <input type="text" placeholder="Digite" size="30" id="pnombre" > <br>
                     <label >
                         Segundo Nombre 
                     </label>
                     <br>
-                    <input type="text" placeholder="Digite" size="30"> <br>
+                    <input type="text" placeholder="Digite" size="30" id="snombre">  <br>
                     <label >
                         Primer Apellido
                     </label>
                     <br>
-                    <input type="text" placeholder="Digite" size="30"> <br>
+                    <input type="text" placeholder="Digite" size="30" id="papellido" > <br>
                     <label >
                         Segundo Apellido
                     </label>
                     <br>
-                    <input type="text" placeholder="Digite" size="30"> <br>
+                    <input type="text" placeholder="Digite" size="30" id="sapellido" > <br>
                
                     <label >
                         Fecha de nacimiento
                     </label>
                     <br>
-                    <input type="date"> <br>
+                    <input type="date" id="fnacimiento" > <br>
                     <label >
                         Edad
                     </label>
                     <br>
-                    <input type="number" placeholder="Digite" min="0" size="10"> <br>
+                    <input type="number" placeholder="Digite" min="0" size="10" id="edad"> <br>
                     <label >
                         Correo electronico
                     </label>
                     <br>
-                    <input type="email" placeholder="Digite" size="30" > <br>
+                    <input type="email" placeholder="Digite" size="30" id="correo" > <br>
                     <label >
                         Dirección de residencia
                     </label>
                     <br>
-                    <input type="text" placeholder="Digite" size="30"> <br>
+                    <input type="text" placeholder="Digite" size="30" id="direccion" > <br>
                     <label >
                         Número celular
                     </label>
                     <br>
-                    <input type="tel" placeholder="Digite" size="30" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">  <br>
+                    <input type="tel" placeholder="Digite" size="30" id="ncelular">  <br>
                     <label >
                         Genero
                     </label> <br>
-                    <input type="radio" name="id">  
+                    <input type="radio" name="choice"  value="Masculino">  
                     <label>Masculino</label> <br>            
-                    <input type="radio" name="id"> 
+                    <input type="radio" name="choice"  value="Femenino">  
                     <label>Femenino</label> <br>
-                    <input type="radio" name="id"> 
+                    <input type="radio" name="choice"  value="Otros"> 
                     <label>Otro</label> <br>
                     
                     <label>Tipo de documento</label>
                     <br>
-                    <select placeholder="Selecione" >
+                    <select placeholder="Selecione" id="tdoc">
                         <option ></option>
                         <option >C.C</option>
                         <option >C.E</option>
@@ -115,9 +116,7 @@
                     <input type="radio" name="ck">
                     <label >No</label>
                     <input type="radio" name="ck"> <br>
-                    <br>
-                    <br>
-                    <a href="#"><input type="submit"></a>
+                    <input type="submit" onclick="contactanos()">
                     <input type="reset">
                 </fieldset>
             </form>
