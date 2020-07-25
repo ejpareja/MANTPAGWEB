@@ -26,12 +26,17 @@ var password = document.getElementById('pass').value;
     } 
 }
 
+
 function validationInvitado(){
     if(localStorage != null){
         localStorage.clear();
         myStorage.setItem('usuario', invitado);
+        location.href='../index.html';
+
     } else {
         myStorage.setItem('usuario', invitado);
+        location.href='../index.html';
+
 
     }
 }
@@ -46,38 +51,32 @@ function sendMsg () {
 
 
 function contactanos(){
-    const genero = document.querySelectorAll('input[name="choice"]');
-    let generoValue;
-    for( const rs of genero){
-        if(rs.ischecked){
-            generoValue = rs.value;
-            break
-        }
-    }
-
     let myData = {
-        Nombres : document.getElementById("pnombre").value + " " + document.getElementById("snombre").value ,
-        Apellidos : document.getElementById("papellido").value + " " + document.getElementById("sapellido").value ,
+        Nombres : document.getElementById("nombres").value,
+        Apellidos : document.getElementById("apellidos").value,
         Fecha_Nacimiento : document.getElementById("fnacimiento").value,
-        Edad : document.getElementById("edad").value,
         Correo_Electronico : document.getElementById("correo").value,
         Direccion : document.getElementById("direccion").value,
         No_Celular : document.getElementById("ncelular").value,
-        Genero : generoValue,
     }
 
     myStorage.setItem('persona', JSON.stringify(myData));
-    
+    alert("Envio con exito")
 }
 
 
 function salir() {
     localStorage.clear();
-    location.href='./html/login.html'; 
+    location.href='../html/login.html'; 
 }
 
 function salirOne() {
     localStorage.clear();
-    location.href='./login.html'; 
+}
+
+function pagar(){
+    alert("Pago realizado con exito")
+    location.href='../html/planes.html'; 
+
 }
 
