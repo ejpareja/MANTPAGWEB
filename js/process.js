@@ -63,10 +63,10 @@ function mostrarTabla(){
     }
     function eliminarRegistro(id, position){
         console.log('LLEGO A ELIMINAR');
-        var listRemove = getList();
+       /* var listRemove = getList();
         var removed = listRemove.splice(id, position);
         saveLocalStorage(removed);
-        mostrarTabla();
+        mostrarTabla();*/
     }
 
     
